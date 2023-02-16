@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <script src="pokemonNuevo.js" type="text/javascript" defer></script>
+    <link href="pokemonNuevo.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <body>
+        <div container class="container">
+            <div class="logoImagen">
+                <img src="logo_pokedex.png" alt="Pokedex" id="logo">
+                <h1>Buscador de Pokémon</h1>
+            </div>
+            <form action="" onsubmit="buscarPokemon(event)">
+                <input type="text" name= "pokemon" autocomplete="off"placeholder="Introduce un nombre o un ID:">
+            </form>
+            <div  data-carta class="carta">
+                <div data-pokemonNombre id= "pokemonNombre">Pokédex</div>
+                <div data-img-container class="img-container">
+                    <img data-pokemonImg id="pokemonImg" src="poke-shadow.png" />
+                </div>
+                <div data-pokemonID id="pokemonID"></div>
+                <div data-pokemonTipos class="pokemonTipos"></div>
+                <div data-pokemonHabilidades class="pokemonHabilidades"></div>
+            </div>
+            <div class="spinner" id="cargar" style="display: none"></div>
+    </body>
+
+</html>
